@@ -45,7 +45,7 @@ export default function Navbar() {
 
             {/* Center Links (Desktop only) */}
             <nav className="hidden md:flex items-center gap-10">
-              <Link className=" hover:text-primary  duration-200" href="#services">Services</Link>
+              <Link className=" hover:text-primary  duration-200" href="/services">Services</Link>
               <Link className=" hover:text-primary  duration-200" href="#case-studies">Case Studies</Link>
               <Link className=" hover:text-primary  duration-200" href="#careers">Careers</Link>
               <Link className=" hover:text-primary  duration-200" href="#about">About Us</Link>
