@@ -1,118 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
-
-@theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-
-  /* shadcn tokens */
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-}
-
-/* ✅ LIGHT THEME (WHITE BACKGROUND) */
-:root {
-  --radius: 0.625rem;
-
-  /* shadcn base */
-  --background: #ffffff;
-  --foreground: #0b1220;
-  --card: #ffffff;
-  --card-foreground: #0b1220;
-  --popover: #ffffff;
-  --popover-foreground: #0b1220;
-
-  /* ✅ make primary BLUE (instead of black) */
-  --primary: #2f6bff;
-  --primary-foreground: #ffffff;
-
-  --secondary: #f3f6ff;
-  --secondary-foreground: #0b1220;
-
-  --muted: #f5f7ff;
-  --muted-foreground: #4b5563;
-
-  --accent: #eef4ff;
-  --accent-foreground: #0b1220;
-
-  --destructive: #ef4444;
-  --border: rgba(2, 6, 23, 0.12);
-  --input: rgba(2, 6, 23, 0.12);
-  --ring: rgba(47, 107, 255, 0.35);
-
-
- 
-  --blue-dark: #1e4dff;
-  --black: #070a0f;
-  --text: #0b1220;
-  --text-muted: #4b5563;
-}
+body {  font-family: "Montserrat", sans-serif; }
 
 @theme {
- 
-  --color-primary: #2f6bff;
-  --color-primary-blue-dark: #1e4dff;
-  --color-text: #0b1220;
-  --color-text-muted: #4b5563;
-  
-}
+  /* Tailwind utilities you use directly */
+  --color-primary: #2f6bff;              /* text-primary, bg-primary */
+  --color-primary-foreground: #ffffff;   /* text-primary-foreground */
 
-html, body {
-  height: 100%;
-}
+  --color-foreground: #0b1220;           /* text-foreground */
+  --color-border: rgba(2, 6, 23, 0.12);  /* border-border */
 
-/* ✅ DARK MODE TOKENS (optional if you use .dark later) */
-.dark {
-  --background: #070a0f;
-  --foreground: #eaf0ff;
-  --card: rgba(255,255,255,0.04);
-  --card-foreground: #eaf0ff;
-  --popover: rgba(255,255,255,0.04);
-  --popover-foreground: #eaf0ff;
+  /* CSS vars you reference like var(--text) and var(--text-muted) */
+  --text: #0b1220;                       /* used in bg-[var(--text)] (hamburger lines) */
+  --text-muted: #4b5563;                 /* used in text-[var(--text-muted)] */
 
-  --primary: #2f6bff;
-  --primary-foreground: #ffffff;
-
-  --secondary: rgba(255,255,255,0.06);
-  --secondary-foreground: #eaf0ff;
-
-  --muted: rgba(255,255,255,0.06);
-  --muted-foreground: rgba(234,240,255,0.72);
-
-  --accent: rgba(255,255,255,0.08);
-  --accent-foreground: #eaf0ff;
-
-  --border: rgba(255,255,255,0.12);
-  --input: rgba(255,255,255,0.12);
-  --ring: rgba(47, 107, 255, 0.40);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    /* ✅ THIS controls background now (white) */
-    @apply bg-background text-foreground;
-  }
+  /* Optional: if hero uses primary-dark in wave colors */
+  --primary-dark: #1e4dff;
 }
