@@ -17,7 +17,7 @@ export default function ServiceHeroSection() {
           <div className="absolute inset-0 bg-black/60" />
 
           {/* CONTENT */}
-          <div className="relative z-10 w-full pt-12 flex items-center justify-center">
+          <div className="relative z-10 w-full pt-28 flex items-center justify-center">
             <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-28">
               <div className="mx-auto max-w-3xl text-center">
                 <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight text-white">

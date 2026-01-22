@@ -27,9 +27,9 @@ export default function Footer() {
             <Image
               src="/images/logo.png"
               alt="Afaq"
-              width={90}
-              height={90}
-              className="h-auto w-auto"
+              width={80}
+              height={80}
+              className=""
             />
           </div>
 

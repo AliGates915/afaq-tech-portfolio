@@ -2,13 +2,16 @@ import Link from "next/link";
 
 const CaseStudyHeroSection = ({ title = "Case Studies", Icon }) => {
   return (
-    <section className="pt-24">
+    <section className="pt-16">
       <div className="relative overflow-hidden">
         <div
-          className="h-[50vh] flex items-start bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/hero.png')" }}
+          className="relative h-[70vh] flex items-start bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/case-bg.jpg')" }}
         >
-          <div className="relative z-10 w-full pt-12 flex items-center justify-center">
+          {/* ✅ DARK OVERLAY (same as other heroes) */}
+          <div className="absolute inset-0 bg-black/60" />
+
+          <div className="relative z-10 w-full pt-28 flex items-center justify-center">
             <div className="max-w-7xl w-full px-4 sm:px-6 lg:px-28">
               <div className="mx-auto max-w-3xl text-center">
                 {/* ✅ Icon only on detail page */}
@@ -18,12 +21,12 @@ const CaseStudyHeroSection = ({ title = "Case Studies", Icon }) => {
                   </div>
                 ) : null}
 
-                <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight text-foreground">
+                <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight text-white">
                   {Icon ? (
-                    <span className="text-foreground">{title}</span>
+                    <span className="text-white">{title}</span>
                   ) : (
                     <>
-                      <span className="text-foreground">Afaq </span>
+                      <span className="text-white">Afaq </span>
                       <span className="text-primary">Technologies</span>
                       <br />
                       <span className="text-primary">{title}</span>
@@ -31,8 +34,9 @@ const CaseStudyHeroSection = ({ title = "Case Studies", Icon }) => {
                   )}
                 </h1>
 
-                <p className="mt-5 text-base md:text-lg text-[var(--text-muted)] leading-relaxed">
-                  We help you scale smarter with systems, strategies, and solutions that don’t slow down.
+                <p className="mt-5 text-base md:text-lg text-white/80 leading-relaxed">
+                  We help you scale smarter with systems, strategies, and solutions
+                  that don’t slow down.
                 </p>
 
                 <div className="mt-8 flex items-center justify-center gap-4">
@@ -50,8 +54,9 @@ const CaseStudyHeroSection = ({ title = "Case Studies", Icon }) => {
             </div>
           </div>
 
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-white to-transparent" />
+          {/* ✅ DARK fades (same as other heroes) */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/70 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent" />
         </div>
       </div>
     </section>

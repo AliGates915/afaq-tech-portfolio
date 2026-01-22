@@ -27,7 +27,7 @@ body {
   /* Tailwind utilities you use directly */
   --color-primary: #f29d29;              /* text-primary, bg-primary */
   --color-primary-foreground: #ffffff;   /* text-primary-foreground */
-
+--color-primary-bg: #fff4dd; 
   --color-foreground: #0b1220;           /* text-foreground */
   --color-border: rgba(2, 6, 23, 0.12);  /* border-border */
 
