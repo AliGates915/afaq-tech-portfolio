@@ -1,6 +1,6 @@
-import Navbar from "@/components/layout/Navbar";
+
 import AfaqEdge from "@/components/sections/AfaqEdge";
-import Footer from "@/components/sections/Footer";
+
 import Hero from "@/components/sections/Hero";
 import Industries from "@/components/sections/Industries";
 import OperationalProcess from "@/components/sections/OperationalProcess";
