@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="relative z-10 w-full pt-28">
             <div className="max-w-7xl px-4 sm:px-6 lg:px-28">
               <div className="max-w-3xl text-left">
-                <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.05] tracking-tight text-white">
+                <h1 className="text-4xl md:text-5xl font-extrabold leading-[1.05] tracking-tight text-white">
                   <span className="text-primary">Afaq Technologies</span> Delivering
                   Scalable & Secure <br />
                   <span className="text-primary">Full-Cycle Software Development</span>
