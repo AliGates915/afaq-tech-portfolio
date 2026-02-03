@@ -51,6 +51,30 @@ const SERVICE_CONTENT = {
       "Powerful Windows & macOS desktop apps with clean UI, strong security, and smooth performance for real business workflows.",
     cta: "Innovate with Us",
   },
+  "wordpress-development": {
+  titleBlack: "WordPress",
+  titleOrange: "Development",
+  titleBlack2: "That",
+  titleOrange2: "Performs",
+  byText: "By",
+  brand: "Afaq Technologies",
+  desc:
+    "High-performance WordPress websites with custom themes, plugins, and SEO-ready architecture.",
+  cta: "Innovate with Us",
+},
+
+"figma-design": {
+  titleBlack: "Figma",
+  titleOrange: "Design",
+  titleBlack2: "To",
+  titleOrange2: "Reality",
+  byText: "By",
+  brand: "Afaq Technologies",
+  desc:
+    "Pixel-perfect UI/UX design in Figma, optimized for usability, branding, and developer handoff.",
+  cta: "Innovate with Us",
+},
+
 };
 
 export default async function ServiceDetailPage({ params }) {
